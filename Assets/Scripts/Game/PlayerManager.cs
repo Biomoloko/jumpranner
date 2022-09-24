@@ -7,7 +7,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private Rigidbody rigidB;
     [SerializeField] private Animator anim;
     [SerializeField] private bool isGrounded = true;
-    [SerializeField] private float forceCofficient;
+    [SerializeField] private float forceCofficient = 0.025f ;
 
     [SerializeField] private float timeNotOnHex;
     private Coroutine currentCoroutine;
@@ -76,6 +76,7 @@ public class PlayerManager : MonoBehaviour
         }
         currentCoroutine = StartCoroutine(Waiter());
     }
+
     //private void OnCollisionEnter(Collision col)
     //{
 

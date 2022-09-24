@@ -129,6 +129,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: InnerMiniHex
       objectReference: {fileID: 0}
+    - target: {fileID: 3546315945082764512, guid: 284983494adb7684eb9b164830cb4405, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4214484404426663514, guid: 284983494adb7684eb9b164830cb4405, type: 3}
       propertyPath: m_RootOrder
       value: 0

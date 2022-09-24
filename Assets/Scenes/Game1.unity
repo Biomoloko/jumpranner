@@ -4350,6 +4350,10 @@ PrefabInstance:
       value: Hex 8
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 71cd1ad80b827b441897f13882a924f9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 71cd1ad80b827b441897f13882a924f9, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
@@ -13526,7 +13530,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e7fb649a24c562744a4eb9f0bcd6dda8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.284177
+      value: -8.097
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e7fb649a24c562744a4eb9f0bcd6dda8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -20142,7 +20146,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &2105089707
+--- !u!114 &2105089709
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20151,14 +20155,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 2105089702}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a87815543cd0284cbd77cb4d3258ddb, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c4c8d91eb29a5c41a520d2e1964bc7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obj: {fileID: 0}
+  isGrounded: 0
+  neededPos: {x: 0, y: 0, z: 0}
   rigidbody: {fileID: 2105089706}
-  anim: {fileID: 2105089703}
-  navigateDirection: {x: 0, y: 0, z: 0}
-  sec: 0
+  jumpForce: 0.9
+  botMoveSpeed: 1
+  hexMask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1001 &2113763601
 PrefabInstance:
   m_ObjectHideFlags: 0
