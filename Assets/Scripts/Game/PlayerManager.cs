@@ -76,34 +76,5 @@ public class PlayerManager : MonoBehaviour
         }
         currentCoroutine = StartCoroutine(Waiter());
     }
-
-    //private void OnCollisionEnter(Collision col)
-    //{
-
-    //    if (col.gameObject.tag == "Ground")
-    //    {
-    //        if (currentCoroutine != null)
-    //        {
-    //            StopCoroutine(currentCoroutine);
-    //        }
-    //        isGrounded = true;
-    //        anim.SetBool("IsGrounded", true);
-    //    }
-
-    //}
-    //public void OnCollisionExit(Collision col)
-    //{
-    //    if (currentCoroutine != null)
-    //    {
-    //        StopCoroutine(currentCoroutine);
-    //    }
-    //    isGrounded = false;
-    //    currentCoroutine = StartCoroutine(Waiter());
-    //}
-    //IEnumerator Waiter()
-    //{
-    //    yield return new WaitForSeconds(0.3f);
-    //    anim.SetBool("IsGrounded", false);
-    //}
 }
 
